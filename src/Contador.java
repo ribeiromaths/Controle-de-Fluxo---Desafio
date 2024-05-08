@@ -7,19 +7,16 @@ public class Contador {
 
         System.out.println("Digite o primeiro parametro: ");
         int parametroUm = entr.nextInt();
-
         System.out.println("Digite o segundo parametro: ");
         int parametroDois = entr.nextInt();
 
         try {
             contar(parametroUm, parametroDois);
 
-        } catch (ParametroInvalidosExcepetion e) {
-            
-        }
+        }catch (ParametroInvalidosExcepetion e) {   
 
+            }
     }
-
 
     public static void contar(int parametroUm, int parametroDois) throws ParametroInvalidosExcepetion {
         //Aqui é validado se o 1° parametro é maior que o segundo. Sendo maior ele gera uma exceção baseada na regra
@@ -33,9 +30,5 @@ public class Contador {
                 System.out.println("Imprimindo o número " + (i + (parametroUm+1)));
             }
         }
-
-
-        
     }
-
 }
